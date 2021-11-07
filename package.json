@@ -1,0 +1,29 @@
+{
+  "name": "dsouza_v2",
+  "version": "1.0.0",
+  "description": "Desenvolvendo meu novo site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegosouz4/dsouza.git"
+  },
+  "author": "Diego Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegosouz4/dsouza/issues"
+  },
+  "homepage": "https://github.com/diegosouz4/dsouza#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.43.4"
+  }
+}

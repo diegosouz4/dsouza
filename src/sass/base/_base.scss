@@ -1,4 +1,99 @@
-* {
-  padding: 0;
+@import "./normalize";
+@import "./mixin";
+@import "./variables";
+@import "./helpers";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: $font-regular;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--cor-suporte-escuro);
+  font-family: $font-destaque;
+  font-weight: bold;
+}
+
+p {
+  color: var(--cor-cinza-escuro);
+  font-size: var(--tamanho-texto);
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 75ch;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+section p + a{
+  margin-top: var(--p-1-5);
+}
+
+p > strong {
+  font-weight: bold;
+  color: var(--cor-suporte-escuro);
+}
+
+hr {
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--cor-cinza);
+  height: 3px;
+  max-width: 150px;
+  margin: 0.75rem auto var(--p-2-5);
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--cor-destaque);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+button,
+input {
+  outline: 0;
+  border: 0;
+}
+
+section {
+  padding-top: var(--p-2-5);
+  padding-bottom: var(--p-2-5);
+  @include for-desktop-only {
+    padding-top: var(--p-5);
+    padding-bottom: var(--p-5);
+  }
+}
+
+button {
+  background: none;
+  cursor: pointer;
   margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  @include for-desktop-only {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }

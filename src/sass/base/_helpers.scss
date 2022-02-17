@@ -1,0 +1,14 @@
+@mixin flex($align: initial, $justify: initial, $gap: 1rem) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin grid($align: initial, $justify: initial, $gap: 1rem) {
+  display: grid;
+  gap: $gap;
+  align-items: $align;
+  justify-content: $justify;
+}

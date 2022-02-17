@@ -4,8 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Componentes | Dsouza</title>
+    <title>Diego Souza | Componentes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="dir/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <section>
+      <h1>componentes</h1>
+      <div class="container">
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="titulo">Menu principal</h2>
+        <hr>
+        <header class="header">
+          <div class="container">
+            <a class="header__logo" href="/" title="logo Diego Souza" aria-label="Voltar para home">
+              <svg width="50" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M49.821 15a17.305 17.305 0 0 0-1.506-5 17.541 17.541 0 0 0-3.569-5c-3.155-3.092-7.48-5-12.246-5h-30a2.5 2.5 0 0 0 0 5h15A2.499 2.499 0 0 1 20 7.5a2.5 2.5 0 0 1-2.5 2.5h-5a2.5 2.5 0 0 0 0 5h5a2.5 2.5 0 0 1 0 5h-15a2.5 2.5 0 0 0 0 5h15a2.5 2.5 0 0 1 0 5h-5a2.5 2.5 0 0 0 0 5h20c4.766 0 9.09-1.908 12.246-5a17.475 17.475 0 0 0 3.569-5 17.305 17.305 0 0 0 1.506-5c.119-.815.179-1.651.179-2.5s-.06-1.683-.179-2.5zm-22.626.733a2.503 2.503 0 0 1 0-3.535l3.538-3.537a2.5 2.5 0 0 1 3.534 3.537l-3.534 3.535a2.501 2.501 0 0 1-3.538 0zm10.607 7.07-3.535 3.537a2.501 2.501 0 0 1-3.535-3.537l3.535-3.536a2.498 2.498 0 0 1 3.535 0c.977.977.977 2.56 0 3.535z" fill="#111"/><path d="M2.5 15a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" fill="#111"/></svg>
+            </a>
+
+            <nav class="header__menu">
+              <ul>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./sobre.html">Projetos</a></li>
+                <li><a class="link_destaque" href="./sobre.html">Contato</a></li>
+              </ul>
+            </nav>
+            
+            <div class="header__buttons">
+              <button class="mobile__btn btn__menu" aria-label="Abre o menu mobile">Menu</button>
+              <button class="mobile__btn btn__darkmode" aria-label="Muda para darkmode">
+                <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.338 16.162 25 12.5l-3.662-3.662V3.662h-5.177L12.5 0 8.838 3.662H3.662v5.176L0 12.5l3.662 3.662v5.177h5.176L12.5 25l3.662-3.662h5.177v-5.177zM12.5 19.334a6.836 6.836 0 1 1 0-13.67 6.836 6.836 0 0 1 0 13.67z" fill="#253751"/><path d="M12.5 18.51a6.01 6.01 0 1 0 0-12.02 6.01 6.01 0 0 0 0 12.02z" fill="#253751"/></svg>
+              </button>
+            </div>
+
+          </div>
+        </header>       
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="titulo">Breadcrumbs</h2>
+        <hr>
+        <div class="bradcrumbs">
+          <a href="#" title="Página inicial">Home</a>
+          <a href="#" title="Página produtos">produtos</a>
+          <p>Página Atual</p>
+        </div>        
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="titulo">Card flutuante</h2>
+        <hr>        
+        <div class="float-card">
+          <p>Card Flutuante.</p>
+        </div>
+        <div class="float-card">
+          <p>Card Flutuante.</p>
+        </div>
+        <div class="float-card card--cursos">
+          <p>Card Flutuante.</p>
+          <span>190h</span>
+        </div>
+
+        <div class="conhecimento__container">
+          <dt class="float-card card--faq"><button aria-controls="desenvolvedor" aria-expanded="true"><svg width="27" height="25" xmlns="http://www.w3.org/2000/svg"><path d="M9.196.84v2.64c-.488 0-.908.044-1.26.132-.344.08-.604.232-.78.456-.168.216-.232.528-.192.936l.372 3.54c.096.896-.004 1.62-.3 2.172-.288.552-.732.976-1.332 1.272-.592.288-1.292.492-2.1.612.856.128 1.58.336 2.172.624.592.288 1.024.704 1.296 1.248s.36 1.272.264 2.184l-.372 3.54c-.04.4.024.712.192.936.176.224.44.376.792.456.352.088.768.132 1.248.132v2.64c-1.104 0-2.04-.08-2.808-.24-.768-.16-1.384-.416-1.848-.768a2.648 2.648 0 0 1-.948-1.368c-.168-.56-.212-1.244-.132-2.052l.36-3.432c.064-.608-.04-1.084-.312-1.428-.264-.344-.656-.584-1.176-.72-.52-.144-1.12-.216-1.8-.216v-3.072c.672 0 1.268-.068 1.788-.204.52-.144.916-.388 1.188-.732.272-.344.376-.82.312-1.428l-.36-3.408c-.088-.824-.048-1.52.12-2.088a2.648 2.648 0 0 1 .948-1.368c.464-.352 1.08-.604 1.848-.756.776-.16 1.716-.24 2.82-.24zM17.395.84c1.104 0 2.04.08 2.808.24.768.16 1.38.416 1.836.768.464.344.784.8.96 1.368.176.56.22 1.244.132 2.052L22.77 8.7c-.064.608.04 1.084.312 1.428.272.344.664.588 1.176.732.52.136 1.12.204 1.8.204v3.072c-.672 0-1.268.072-1.788.216-.52.136-.916.376-1.188.72-.272.344-.376.82-.312 1.428l.36 3.408c.088.824.044 1.52-.132 2.088a2.56 2.56 0 0 1-.948 1.368c-.456.352-1.072.604-1.848.756-.768.16-1.704.24-2.808.24v-2.64a5.1 5.1 0 0 0 1.248-.132c.352-.08.612-.232.78-.456.176-.224.244-.536.204-.936l-.372-3.54c-.096-.904 0-1.628.288-2.172.296-.552.744-.972 1.344-1.26.6-.296 1.304-.504 2.112-.624-.856-.128-1.584-.336-2.184-.624-.592-.288-1.024-.704-1.296-1.248-.272-.552-.36-1.28-.264-2.184l.372-3.54c.04-.408-.028-.72-.204-.936-.168-.224-.428-.376-.78-.456a5.1 5.1 0 0 0-1.248-.132V.84z" fill="#111"/></svg> Desenvolvedor Frontend </button></dt>
+          <dd id="desenvolvedor">
+            <ul>
+              <li class="float-card">HTML</li>
+              <li class="float-card">CSS</li>
+              <li class="float-card">SASS</li>
+              <li class="float-card">Javacript</li>
+              <li class="float-card">Wordpress</li>
+              <li class="float-card">git|github</li>
+            </ul>
+          </dd>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="titulo">Textos</h2>
+        <hr>
+        <h3 class="subtitulo">Subtítulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit</strong>. Nemo iste enim a cumque quod molestiae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iste enim a cumque quod molestiae.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="titulo">Botões</h2>
+        <hr>
+        <a class="btn btn--border" title="botão" href="#">Botão normal</a>
+        <a class="btn btn--fill" title="botão" href="#">Botão destaque</a>
+        <a class="btn btn--inline" title="botão" href="#">Botão inline</a>
+      </div>
+    </section>
+
+  </body>
 </html>

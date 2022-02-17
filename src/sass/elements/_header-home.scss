@@ -1,0 +1,54 @@
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  &--home {
+    background-color: var(--cor-cinza);
+  }
+
+  .container {
+    &__intro {
+      margin-top: var(--p-2-5);
+      @include flex(center, center);
+      & > div {
+        @include for-tablete-extend {
+          flex: 1 1 300px;
+        }
+      }
+
+      span {
+        font-size: var(--tamanho-tag);
+        letter-spacing: 1.2px;
+        color: var(--cor-cinza-escuro);
+      }
+
+      h1 {
+        font-family: $font-destaque;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 4rem;
+        line-height: 1;
+        margin-bottom: 0.625rem;
+        @include max-query(430px) {
+          font-size: 2.5rem;
+        }
+        @include for-desktop-only {
+          font-size: 5rem;
+          margin-bottom: var(--p-1);
+          max-width: 5ch;
+        }
+      }
+
+      p {
+        max-width: 30ch;
+        margin-bottom: 2rem;
+      }
+
+      .intro__img {
+        @include for-mobile-only {
+          order: -1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.header {
+  position: relative;
+  .container__menu {
+    @include flex(center, space-between);
+    max-width: 1440px;
+  }
+  &__logo {
+    transition: var(--pop);
+    svg {
+      position: relative;
+      z-index: 1;
+      transition: var(--pop);
+      path,
+      circle {
+        transition: var(--pop);
+      }
+    }
+    &:hover,
+    &:focus {
+      svg {
+        transform: scale(1.04) translateY(-5px);
+        path,
+        circle {
+          fill: var(--cor-destaque-hover);
+        }
+      }
+    }
+  }
+  &__buttons {
+    @include for-mobile-only {
+      @include flex(center);
+    }
+  }
+  nav {
+    @include for-mobile-only {
+      position: absolute;
+      background-color: var(--cor-cinza);
+      width: 50%;
+      top: 6rem;
+      right: -100%;
+      padding: 2rem 1rem;
+      z-index: 2;
+      border-radius: 4px;
+      border: 1px solid var(--cor-cinza-claro);
+      box-shadow: var(--box-shadow);
+      transition: var(--pop-slow);
+      opacity: 0;
+      &.open {
+        right: 0.625rem;
+        opacity: 1;
+      }
+    }
+    @include for-tablete-extend {
+      flex: 2;
+      position: initial;
+    }
+
+    ul {
+      @include for-tablete-extend {
+        @include flex(center, flex-end, 2rem);
+      }
+    }
+    @include for-mobile-only {
+      li + li {
+        margin-top: 1rem;
+      }
+    }
+    a {
+      display: block;
+      font-size: var(--tamanho-subtitulo);
+      color: var(--cor-suporte-escuro);
+      position: relative;
+      &::after {
+        content: "";
+        background-color: var(--cor-suporte-escuro);
+        border-radius: 4px;
+        bottom: -1rem;
+        display: block;
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 2px;
+        transition: var(--pop);
+      }
+      &:hover,
+      &:focus {
+        &::after {
+          background-color: var(--cor-suporte-escuro);
+          bottom: -4px;
+          opacity: 1;
+        }
+      }
+      @include for-tablete-extend {
+        &.link_destaque {
+          background-color: var(--cor-destaque);
+          border-radius: 1.25rem;
+          color: var(--cor-destaque-escuro);
+          font-weight: bold;
+          height: 2.5rem;
+          line-height: 2.5rem;
+          padding: 0 1rem;
+          &:hover,
+          &:focus {
+            background-color: var(--cor-destaque-hover);
+          }
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  .btn__menu {
+    font-size: 1px;
+    position: relative;
+    transition: var(--pop);
+    @include for-tablete-extend {
+      display: none;
+    }
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 1.125rem;
+      height: 2px;
+      background-color: var(--cor-suporte-escuro);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: var(--pop);
+    }
+    &::before {
+      height: 8px;
+      background-color: transparent;
+      border-top: 2px solid var(--cor-suporte-escuro);
+      border-bottom: 2px solid var(--cor-suporte-escuro);
+    }
+    &:hover,
+    &:focus {
+      &::before {
+        height: 12px;
+      }
+    }
+    &.open {
+      // background-color: var(--cor-suporte-escuro);
+      &::before,
+      &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+        background-color: var(--cor-suporte-escuro);
+      }
+      &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+        height: 2px;
+        border-top: 0;
+        border-bottom: 0;
+      }
+    }
+  }
+}

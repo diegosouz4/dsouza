@@ -1,0 +1,47 @@
+$font-destaque: "Fira Sans", sans-serif;
+$font-regular: "Poppins", sans-serif;
+
+:root {
+  // Cores
+  --cor-destaque: #ffd432;
+  --cor-destaque-hover: #f2c20e;
+  --cor-destaque-escuro: #5f5410;
+  --cor-suporte: #253751;
+  --cor-suporte-escuro: #182230;
+  --cor-cinza: #fbfbfb;
+  --cor-cinza-claro: #e1e1e1;
+  --cor-cinza-medio: #a7a7a7;
+  --cor-cinza-escuro: #666;
+
+  //Neumorphic cores
+  --neuShadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
+  --neuInnerShadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
+    inset 0.2rem 0.2rem 0.5rem #fff;
+
+  // Tamanho fonte
+  --tamanho-titulo: 1.25rem; //20px
+  --tamanho-subtitulo: 1.125rem; //18px
+  --tamanho-texto: 1rem; //16px
+  --tamanho-tag: 0.875rem; //14px
+
+  // Espaçamento
+  --p-1: 1rem;
+  --p-1-5: 1.5rem;
+  --p-2: 2rem;
+  --p-2-5: 2.5rem;
+  --p-5: 5rem;
+
+  //Animate
+  --pop: 250ms cubic-bezier(1, -0.01, 0.19, 1.47);
+  --pop-slow: 1s cubic-bezier(1, -0.01, 0.19, 1.47);
+
+  // Efeitos
+  --box-shadow: 0 1rem 1rem -0.5rem rgba(37, 55, 81, 0.16);
+}
+
+@include for-mobile-only {
+  :root {
+    // Tamanho fonte
+    --tamanho-tag: 0.75rem;
+  }
+}

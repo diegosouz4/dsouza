@@ -5,7 +5,242 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diego Souza | desenvolvedor front-end</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="dir/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header header--home">
+      <div class="container container__menu">
+        <a class="header__logo" href="/" title="logo Diego Souza" aria-label="Voltar para home">
+          <svg width="50" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M49.821 15a17.305 17.305 0 0 0-1.506-5 17.541 17.541 0 0 0-3.569-5c-3.155-3.092-7.48-5-12.246-5h-30a2.5 2.5 0 0 0 0 5h15A2.499 2.499 0 0 1 20 7.5a2.5 2.5 0 0 1-2.5 2.5h-5a2.5 2.5 0 0 0 0 5h5a2.5 2.5 0 0 1 0 5h-15a2.5 2.5 0 0 0 0 5h15a2.5 2.5 0 0 1 0 5h-5a2.5 2.5 0 0 0 0 5h20c4.766 0 9.09-1.908 12.246-5a17.475 17.475 0 0 0 3.569-5 17.305 17.305 0 0 0 1.506-5c.119-.815.179-1.651.179-2.5s-.06-1.683-.179-2.5zm-22.626.733a2.503 2.503 0 0 1 0-3.535l3.538-3.537a2.5 2.5 0 0 1 3.534 3.537l-3.534 3.535a2.501 2.501 0 0 1-3.538 0zm10.607 7.07-3.535 3.537a2.501 2.501 0 0 1-3.535-3.537l3.535-3.536a2.498 2.498 0 0 1 3.535 0c.977.977.977 2.56 0 3.535z" fill="#111"/><path d="M2.5 15a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" fill="#111"/></svg>
+        </a>
+
+        <nav id="menuMobile" class="header__menu">
+          <ul>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./sobre.html">Projetos</a></li>
+            <li><a class="link_destaque" href="./sobre.html">Contato</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header__buttons">
+          <button id="toggleMenu" class="mobile__btn btn__menu" aria-label="Abre o menu mobile">Menu</button>
+          <button class="mobile__btn btn__darkmode" aria-label="Muda para darkmode">
+            <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.338 16.162 25 12.5l-3.662-3.662V3.662h-5.177L12.5 0 8.838 3.662H3.662v5.176L0 12.5l3.662 3.662v5.177h5.176L12.5 25l3.662-3.662h5.177v-5.177zM12.5 19.334a6.836 6.836 0 1 1 0-13.67 6.836 6.836 0 0 1 0 13.67z" fill="#253751"/><path d="M12.5 18.51a6.01 6.01 0 1 0 0-12.02 6.01 6.01 0 0 0 0 12.02z" fill="#253751"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="container container__intro">
+        <div class="into__content">
+          <span>Olá! Meu nome é</span>
+          <h1>Diego Souza</h1>
+          <p>Sou desenvolver front-end e estou pronto para <strong>trazer o seu projeto a vida.</strong></p>
+          <a class="btn btn--border" title="botão" href="#">Ver trabalhos</a>
+          <a class="btn btn--fill" title="botão" href="#">Conversar</a>
+        </div>
+        <div class="intro__img">
+          <figcaption>
+            <img src="./dir/img/imagem home diego souza desenvolvedoe frontend.png" alt="Diego Souza desenvolvedor frontend">
+          </figcaption>
+        </div>
+      </div>
+    </header>
+
+    <main class="main__home">
+      <section class="sobre">
+        <div class="container">
+          <h2 class="titulo">Sobre mim</h2>
+          <hr>
+
+          <div class="row">
+            <figure class="sobre__imagem">
+              <img width="250" height="300" src="./dir/img/diego souza sobre.jpg" alt="Diego Souza">
+            </figure>
+            <div class="sobre__textos">
+              <p>Trabalho como designer desde 2010, e nessa estrada eu pude adquirir experiências com criação de website, branding, design gráfico, desenvolvimento de layouts. Atualmente estou <strong>focando minha carreira para o desenvolvimento web</strong> e estudando para me tornar um <strong>desenvolvedor full-stack.</strong></p>
+  
+              <a href="#" class="btn btn--border">Download CV</a>
+              
+              <ul class="social social--inline">
+                <li><a href="#" target="_bank" title="Instagram" rel="noopen"><svg viewBox="0 0 16 15" width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.503 3.654A3.84 3.84 0 0 0 3.658 7.5a3.84 3.84 0 0 0 3.845 3.846A3.84 3.84 0 0 0 11.35 7.5a3.84 3.84 0 0 0-3.846-3.846zm0 6.346a2.505 2.505 0 0 1-2.5-2.5c0-1.379 1.121-2.5 2.5-2.5 1.38 0 2.5 1.121 2.5 2.5S8.88 10 7.504 10zm4.9-6.503a.895.895 0 0 1-.896.897.897.897 0 1 1 .897-.897zm2.548.91c-.057-1.201-.332-2.266-1.212-3.143C12.862.387 11.798.113 10.596.053c-1.238-.07-4.95-.07-6.189 0C3.21.11 2.145.384 1.264 1.26.384 2.138.113 3.202.053 4.404c-.07 1.238-.07 4.95 0 6.189.057 1.201.331 2.266 1.211 3.143.88.877 1.942 1.151 3.143 1.211 1.239.07 4.95.07 6.19 0 1.2-.057 2.265-.331 3.142-1.211.877-.877 1.151-1.942 1.212-3.143.07-1.239.07-4.947 0-6.186zm-1.6 7.514a2.532 2.532 0 0 1-1.426 1.426c-.988.392-3.33.302-4.422.302-1.09 0-3.437.087-4.421-.302a2.531 2.531 0 0 1-1.426-1.425c-.392-.988-.301-3.33-.301-4.422 0-1.091-.087-3.437.301-4.422a2.531 2.531 0 0 1 1.426-1.425c.987-.392 3.33-.302 4.421-.302 1.091 0 3.438-.087 4.422.302a2.531 2.531 0 0 1 1.426 1.425c.391.988.301 3.33.301 4.422 0 1.091.09 3.438-.301 4.421z" fill="#111"/></svg></a></li>
+                <li><a href="#" target="_bank" title="Youtube" rel="noopen"><svg viewBox="0 0 15 11" width="15" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.687 1.65A1.885 1.885 0 0 0 13.36.315C12.19 0 7.5 0 7.5 0S2.81 0 1.64.315A1.885 1.885 0 0 0 .313 1.65C0 2.828 0 5.284 0 5.284s0 2.457.313 3.634c.173.65.681 1.14 1.327 1.313 1.17.316 5.86.316 5.86.316s4.69 0 5.86-.316a1.857 1.857 0 0 0 1.327-1.313C15 7.74 15 5.284 15 5.284s0-2.456-.313-3.634zM5.966 7.514v-4.46l3.92 2.23-3.92 2.23z" fill="#111"/></svg></a></li>
+                <li><a href="#" target="_bank" title="Behance" rel="noopen"><svg viewBox="0 0 15 10" width="15" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.042 4.214c.828-.396 1.26-.995 1.26-1.928C7.302.448 5.932 0 4.352 0H0v9.23h4.474c1.677 0 3.253-.806 3.253-2.68 0-1.16-.55-2.016-1.685-2.336zM2.029 1.576h1.903c.732 0 1.39.205 1.39 1.054 0 .784-.512 1.1-1.236 1.1H2.029V1.575zM4.198 7.66h-2.17V5.12H4.24c.893 0 1.458.372 1.458 1.317 0 .933-.675 1.224-1.5 1.224zm9.336-6.268H9.792V.484h3.742v.91zM15 5.984c0-1.976-1.156-3.625-3.253-3.625-2.036 0-3.419 1.532-3.419 3.537 0 2.08 1.31 3.508 3.42 3.508 1.596 0 2.63-.72 3.127-2.248h-1.62c-.174.57-.893.873-1.45.873-1.076 0-1.64-.63-1.64-1.7h4.82c.007-.11.015-.227.015-.345zm-4.833-.812c.06-.878.643-1.427 1.523-1.427.922 0 1.386.541 1.464 1.427h-2.987z" fill="#111"/></svg></a></li>
+                <li><a href="#" target="_bank" title="Github" rel="noopen"><svg viewBox="0 0 16 15" width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.146 12.078c0 .062-.072.112-.162.112-.102.009-.173-.04-.173-.112 0-.062.071-.112.161-.112.093-.009.174.04.174.112zm-.965-.14c-.022.062.04.134.133.152.081.031.174 0 .193-.062.018-.062-.04-.133-.134-.16-.08-.023-.17.008-.192.07zm1.371-.052c-.09.021-.152.08-.143.152.01.062.09.102.183.08.09-.021.152-.08.143-.142-.01-.06-.093-.1-.183-.09zM7.592 0C3.292 0 0 3.266 0 7.568c0 3.44 2.165 6.383 5.257 7.42.397.07.537-.174.537-.376 0-.192-.01-1.253-.01-1.904 0 0-2.17.465-2.626-.925 0 0-.354-.902-.863-1.135 0 0-.71-.487.05-.478 0 0 .772.063 1.197.8.68 1.198 1.818.854 2.261.649.072-.496.273-.84.497-1.045-1.734-.193-3.484-.444-3.484-3.428 0-.853.236-1.28.732-1.827-.08-.201-.344-1.032.081-2.106.648-.201 2.14.838 2.14.838a7.287 7.287 0 0 1 1.948-.264c.66 0 1.328.09 1.948.264 0 0 1.492-1.042 2.14-.838.425 1.077.161 1.905.08 2.106.497.55.8.977.8 1.827 0 2.993-1.826 3.232-3.56 3.428.286.245.527.71.527 1.439 0 1.045-.009 2.338-.009 2.593 0 .201.143.447.537.375 3.101-1.03 5.204-3.973 5.204-7.413C15.384 3.266 11.895 0 7.593 0zM3.016 10.698c-.04.03-.031.102.022.161.05.05.12.071.16.031.041-.031.032-.102-.02-.161-.05-.05-.122-.072-.162-.031zm-.335-.252c-.022.04.01.09.071.122.05.03.112.021.134-.022.021-.04-.01-.09-.072-.121-.062-.019-.111-.01-.133.021zm1.005 1.105c-.05.04-.031.133.04.192.071.071.161.08.202.031.04-.04.021-.133-.04-.192-.069-.072-.162-.08-.202-.031zm-.354-.456c-.05.03-.05.111 0 .183.05.071.134.102.174.071.05-.04.05-.12 0-.192-.044-.072-.124-.103-.174-.062z" fill="#111"/></svg></a></li>
+                <li><a href="#" target="_bank" title="Pinterest" rel="noopen"><svg viewBox="0 0 12 15" width="12" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.13 0C3.048 0 0 2.056 0 5.383 0 7.498 1.19 8.7 1.911 8.7c.298 0 .47-.83.47-1.064 0-.28-.713-.875-.713-2.038 0-2.416 1.84-4.13 4.22-4.13 2.046 0 3.56 1.164 3.56 3.3 0 1.596-.64 4.59-2.713 4.59-.748 0-1.388-.541-1.388-1.317 0-1.136.793-2.236.793-3.408 0-1.99-2.822-1.629-2.822.776 0 .505.063 1.064.288 1.523-.414 1.786-1.262 4.445-1.262 6.285 0 .568.081 1.127.135 1.695.103.114.052.102.208.045 1.515-2.074 1.46-2.48 2.146-5.194.37.704 1.325 1.082 2.082 1.082 3.192 0 4.626-3.11 4.626-5.914C11.54 1.947 8.962 0 6.13 0z" fill="#111"/></svg></a></li>
+                <li><a href="#" target="_bank" title="Facebook" rel="noopen"><svg viewBox="0 0 9 15" width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m7.507 8.438.417-2.715H5.319V3.96c0-.742.364-1.466 1.53-1.466h1.185V.183S6.959 0 5.932 0C3.787 0 2.384 1.3 2.384 3.654v2.069H0v2.715h2.384V15H5.32V8.437h2.188z" fill="#111"/></svg></a></li>
+              </ul>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+
+      <section class="habilidades">
+        <div class="container">
+          <h2 class="titulo">Habilidades</h2>
+          <hr>
+          <div class="row">           
+            <div class="habilidades__card">
+              <dt class="float-card card--faq ativo"><button aria-controls="desenvolvedor" aria-expanded="true"><svg viewBox="0 0 27 25"  width="27" height="25" xmlns="http://www.w3.org/2000/svg"><path d="M9.196.84v2.64c-.488 0-.908.044-1.26.132-.344.08-.604.232-.78.456-.168.216-.232.528-.192.936l.372 3.54c.096.896-.004 1.62-.3 2.172-.288.552-.732.976-1.332 1.272-.592.288-1.292.492-2.1.612.856.128 1.58.336 2.172.624.592.288 1.024.704 1.296 1.248s.36 1.272.264 2.184l-.372 3.54c-.04.4.024.712.192.936.176.224.44.376.792.456.352.088.768.132 1.248.132v2.64c-1.104 0-2.04-.08-2.808-.24-.768-.16-1.384-.416-1.848-.768a2.648 2.648 0 0 1-.948-1.368c-.168-.56-.212-1.244-.132-2.052l.36-3.432c.064-.608-.04-1.084-.312-1.428-.264-.344-.656-.584-1.176-.72-.52-.144-1.12-.216-1.8-.216v-3.072c.672 0 1.268-.068 1.788-.204.52-.144.916-.388 1.188-.732.272-.344.376-.82.312-1.428l-.36-3.408c-.088-.824-.048-1.52.12-2.088a2.648 2.648 0 0 1 .948-1.368c.464-.352 1.08-.604 1.848-.756.776-.16 1.716-.24 2.82-.24zM17.395.84c1.104 0 2.04.08 2.808.24.768.16 1.38.416 1.836.768.464.344.784.8.96 1.368.176.56.22 1.244.132 2.052L22.77 8.7c-.064.608.04 1.084.312 1.428.272.344.664.588 1.176.732.52.136 1.12.204 1.8.204v3.072c-.672 0-1.268.072-1.788.216-.52.136-.916.376-1.188.72-.272.344-.376.82-.312 1.428l.36 3.408c.088.824.044 1.52-.132 2.088a2.56 2.56 0 0 1-.948 1.368c-.456.352-1.072.604-1.848.756-.768.16-1.704.24-2.808.24v-2.64a5.1 5.1 0 0 0 1.248-.132c.352-.08.612-.232.78-.456.176-.224.244-.536.204-.936l-.372-3.54c-.096-.904 0-1.628.288-2.172.296-.552.744-.972 1.344-1.26.6-.296 1.304-.504 2.112-.624-.856-.128-1.584-.336-2.184-.624-.592-.288-1.024-.704-1.296-1.248-.272-.552-.36-1.28-.264-2.184l.372-3.54c.04-.408-.028-.72-.204-.936-.168-.224-.428-.376-.78-.456a5.1 5.1 0 0 0-1.248-.132V.84z" fill="#111"/></svg> Desenvolvedor front-end </button></dt>
+              <dd id="desenvolvedor" class="ativo">
+                <ul>
+                  <li class="float-card">HTML</li>
+                  <li class="float-card">CSS</li>
+                  <li class="float-card">SASS</li>
+                  <li class="float-card">Javacript</li>
+                  <li class="float-card">Wordpress</li>
+                  <li class="float-card">git | github</li>
+                </ul>
+              </dd>
+            </div>
+
+            <div class="habilidades__card">
+              <dt class="float-card card--faq"><button aria-controls="design" aria-expanded="false"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.571 17.143c-.018 0-.036.005-.054.005l-2.1-3.5c.271-.49.44-1.047.44-1.648s-.168-1.158-.44-1.649l2.1-3.5c.018.001.036.006.054.006a3.428 3.428 0 1 0 0-6.857c-1.266 0-2.359.694-2.952 1.714H6.38A3.413 3.413 0 0 0 3.43 0 3.428 3.428 0 0 0 0 3.429C0 4.694.694 5.788 1.714 6.38v11.237A3.415 3.415 0 0 0 0 20.571 3.428 3.428 0 0 0 3.429 24c1.265 0 2.359-.694 2.952-1.714h11.237A3.414 3.414 0 0 0 20.571 24a3.428 3.428 0 0 0 0-6.857zm-15.428.476V6.38A3.42 3.42 0 0 0 6.38 5.143h11.163l-2.06 3.434c-.02 0-.037-.006-.055-.006a3.428 3.428 0 1 0 0 6.858c.018 0 .035-.006.054-.006l2.06 3.434H6.382a3.415 3.415 0 0 0-1.238-1.238zM14.57 12a.858.858 0 0 1 1.715 0 .858.858 0 0 1-1.715 0zm6.858-8.571a.858.858 0 0 1-1.715 0 .858.858 0 0 1 1.715 0zm-18-.858a.858.858 0 0 1 0 1.715.858.858 0 0 1 0-1.715zm-.858 18a.858.858 0 0 1 1.715 0 .858.858 0 0 1-1.715 0zm18 .858a.858.858 0 0 1 0-1.715.858.858 0 0 1 0 1.715z" fill="#111"/></svg> Designer - Ui - UX </button></dt>
+              <dd id="design">
+                <ul>
+                  <li class="float-card">Figma</li>
+                  <li class="float-card">AdobeXD</li>
+                  <li class="float-card">Photoshop</li>
+                  <li class="float-card">Illustrator</li>
+                </ul>
+              </dd>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projetos">
+        <div class="container">
+          <h2 class="titulo">Trabalhos</h2>
+          <hr>
+          <p>Separei alguns dos projetos que gostei de trablhar durante esses anos. Gostou de algum? <a class="btn btn--inline" title="botão" href="#">Vamos Conversar?</a></p>
+          <ul class="projetos__lista thumbs thumbs--home">
+            <li>
+              <img width="350" width="250" src="./dir/img/thumb-merom-consultoria.jpg" alt="Projeto">
+              <div class="thumbs__info">
+                <div class="info_content">
+                  <h3>Nome do projeto</h3>
+                  <p class="tags"><span>HTML</span><span>CSS</span><span>Javascript</span><span>Wordpress</span></p>
+                  <a href="#" class="btn btn--border" title="Ver projeto">Ver projeto</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img width="350" width="250" src="./dir/img/thumb-merom-consultoria.jpg" alt="Projeto">
+              <div class="thumbs__info">
+                <div class="info_content">
+                  <h3>Nome do projeto</h3>
+                  <p class="tags"><span>HTML</span><span>CSS</span><span>Javascript</span><span>Wordpress</span></p>
+                  <a href="#" class="btn btn--border" title="Ver projeto">Ver projeto</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img width="350" width="250" src="./dir/img/thumb-merom-consultoria.jpg" alt="Projeto">
+              <div class="thumbs__info">
+                <div class="info_content">
+                  <h3>Nome do projeto</h3>
+                  <p class="tags"><span>HTML</span><span>CSS</span><span>Javascript</span><span>Wordpress</span></p>
+                  <a href="#" class="btn btn--border" title="Ver projeto">Ver projeto</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img width="350" width="250" src="./dir/img/thumb-merom-consultoria.jpg" alt="Projeto">
+              <div class="thumbs__info">
+                <div class="info_content">
+                  <h3>Nome do projeto</h3>
+                  <p class="tags"><span>HTML</span><span>CSS</span><span>Javascript</span><span>Wordpress</span></p>
+                  <a href="#" class="btn btn--border" title="Ver projeto">Ver projeto</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img width="350" width="250" src="./dir/img/thumb-merom-consultoria.jpg" alt="Projeto">
+              <div class="thumbs__info">
+                <div class="info_content">
+                  <h3>Nome do projeto</h3>
+                  <p class="tags"><span>HTML</span><span>CSS</span><span>Javascript</span><span>Wordpress</span></p>
+                  <a href="#" class="btn btn--border" title="Ver projeto">Ver projeto</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img width="350" width="250" src="./dir/img/thumb-merom-consultoria.jpg" alt="Projeto">
+              <div class="thumbs__info">
+                <div class="info_content">
+                  <h3>Nome do projeto</h3>
+                  <p class="tags"><span>HTML</span><span>CSS</span><span>Javascript</span><span>Wordpress</span></p>
+                  <a href="#" class="btn btn--border" title="Ver projeto">Ver projeto</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="parceiros">
+        <div class="container">
+          <ul class="parceiros__lista">
+            <li><img width="120" height="80" src="./dir/img/parceiros/parceiro-poeme-se.svg" alt="Parceiro Poeme-se a maior grife literária do país"></li>
+            <li><img width="120" height="80" src="./dir/img/parceiros/parceiro-mcu.png" alt="Parceiro Ministério Cristo em Unidade"></li>
+            <li><img width="120" height="80" src="./dir/img/parceiros/parceiro-falando-em-financas.png" alt="Parceiro Falando em Finanças"></li>
+            <li><img width="120" height="80" src="./dir/img/parceiros/parceiro-merom consultoria.svg" alt="Parceiro Merom Consultoria"></li>
+            <li><img width="120" height="80" src="./dir/img/parceiros/parceiro-sa-esramparia.png" alt="Parceiro SA Estamparia"></li>
+            <li><img width="120" height="80" src="./dir/img/parceiros/parceiro-planetario.svg" alt="Parceiro Planetário do Rio de Janeiro"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="depoimentos">
+        <div class="container">
+          <h2 class="titulo">Depoimentos</h2>
+          <hr>
+          <div class="depoimentos__container">
+            <ul class="depoimentos__lista">
+              <li class="ativo">
+                <div class="float-card">
+                  <p>Site desenvolvido para a igreja Ministério Cristo em Unidade com focu na responsividade e volocidade de carregamento.</p>
+                </div>
+                <div class="depoimentos__info">
+                  <h3>Leonardo Borba</h3>
+                  <h4>Poeme-se</h4>
+                </div>
+              </li>
+              <li>
+                <div class="float-card">
+                  <p>Site desenvolvido para a igreja Ministério Cristo em Unidade com focu na responsividade e volocidade de carregamento.</p>
+                </div>
+                <div class="depoimentos__info">
+                  <h3>Diogo Souza</h3>
+                  <h4>Falando em Finanças</h4>
+                </div>
+              </li>
+              <li>
+                <div class="float-card">
+                  <p>Site desenvolvido para a igreja Ministério Cristo em Unidade com focu na responsividade e volocidade de carregamento.</p>
+                </div>
+                <div class="depoimentos__info">
+                  <h3>Conceição Oliveira</h3>
+                  <h4>Ministério Cristo em Unidade</h4>
+                </div>
+              </li>
+            </ul>
+            <button id="depNext" class="depoimentos_btn" aria-label="Ver Próximo depoimento"></button>
+            <button id="depPrev" class="depoimentos_btn" aria-label="Ver depoimento Anterior"></button>
+          </div>
+          <div class="depoimentos__dots">
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./dir/js/menu.js"></script>
+    <script src="./dir/js/habilidades.js"></script>
+    <script src="./dir/js/depoimento.js"></script>
+  </body>
 </html>

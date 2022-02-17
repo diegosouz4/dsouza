@@ -1,0 +1,126 @@
+.depoimentos {
+  --largura-depoimento: 650px;
+  text-align: center;
+  position: relative;
+  h3 {
+    font-size: var(--tamanho-subtitulo);
+    color: var(--cor-suporte);
+  }
+  h4 {
+    font-family: $font-regular;
+    font-size: var(--tamanho-tag);
+    font-weight: 300;
+    color: var(--cor-cinza-medio);
+  }
+  p {
+    text-align: initial;
+  }
+  ul {
+    position: relative;
+    white-space: nowrap;
+    transform: translateX(0);
+    transition: 600ms ease-in-out;
+  }
+  li {
+    display: inline-block;
+    white-space: initial;
+    width: 100%;
+    & + li {
+      margin-left: 1rem;
+    }
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 60%;
+    max-width: 800px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(calc(-50% - 2rem));
+    border-radius: 0 2rem 2rem 0;
+    background-color: var(--cor-destaque);
+    @include max-query(400px) {
+      height: 280px;
+    }
+    @include max-query(300px) {
+      height: 350px;
+    }
+    @include min-query(620px) {
+      height: 220px;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  .float-card {
+    padding: 3.75rem 2.5rem;
+    width: 100%;
+    max-width: 750px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 1rem;
+      height: 13px;
+      background: url(../../../dir/img/depoimentos/depoimento-icon.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 1.6rem;
+      left: 1.6rem;
+    }
+  }
+  &__container {
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--largura-depoimento);
+    width: 95%;
+  }
+  &_btn {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    &#depNext {
+      right: 0;
+    }
+    &#depPrev{
+      left: 0;
+    }
+  }
+  &__info {
+    margin-top: 4rem;
+  }
+  &__dots {
+    text-align: center;
+    margin-top: var(--p-1);
+    span {
+      cursor: pointer;
+      display: inline-block;
+      width: 0.625rem;
+      height: 0.625rem;
+      border-radius: 50%;
+      background-color: var(--cor-cinza-claro);
+      &.ativo {
+        background-color: var(--cor-suporte);
+        &:hover,
+        &:focus {
+          background-color: var(--cor-suporte-escuro);
+        }
+      }
+      &:hover,
+      &:focus {
+        background-color: var(--cor-cinza-medio);
+      }
+    }
+    span + span {
+      margin-left: 0.625rem;
+    }
+  }
+}

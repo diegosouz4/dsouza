@@ -1,0 +1,24 @@
+.social {
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: var(--pop);
+    path {
+      fill: var(--cor-suporte-escuro);
+    }
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+  &--inline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    @include for-mobile-only {
+      justify-content: center;
+      gap: 1.5625rem;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.bradcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p,
+  a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: var(--cor-cinza-medio);
+  }
+  a {
+    transition: 250ms ease-in;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: var(--cor-suporte-escuro);
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      opacity: 0;
+      transition: var(--pop);
+    }
+    &:hover,
+    &:focus {
+      color: var(--cor-suporte-escuro);
+      &::after {
+        bottom: -0.25rem;
+        opacity: 1;
+      }
+    }
+  }
+  p {
+    color: var(--cor-suporte-escuro);
+    font-weight: bold;
+  }
+  a + a,
+  a + p {
+    margin-left: 1rem;
+    &::before {
+      content: "/";
+      color: var(--cor-cinza-medio);
+      position: relative;
+      display: inline-block;
+      transform: translateX(-0.5rem);
+    }
+  }
+}

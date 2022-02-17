@@ -1,0 +1,59 @@
+.float-card {
+  background-color: var(--cor-cinza);
+  border: 1px solid var(--cor-cinza-claro);
+  border-radius: 0.25rem;
+  box-shadow: var(--box-shadow);
+  display: inline-block;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  &.card--cursos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    width: initial;
+    @include for-desktop-only {
+      max-width: 350px;
+    }
+    span {
+      background: var(--cor-suporte-escuro);
+      border-radius: 2px;
+      color: var(--cor-cinza-claro);
+      display: inline-block;
+      font-size: 0.875rem;
+      font-weight: bold;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      transform: translateX(60%);
+      width: 50px;
+    }
+    &::before {
+      content: "";
+      background-color: var(--cor-destaque-hover);
+      border-radius: 1rem;
+      display: block;
+      left: -3px;
+      height: 2.5rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.375rem;
+    }
+  }
+
+  &.card--faq {
+    width: 100%;
+    transition: var(--pop);
+    outline: solid 2px transparent;
+    &:hover,
+    &:focus {
+      outline: solid 2px var(--cor-destaque-hover);
+      transform: scale(1.02);
+    }
+    &.ativo {
+      outline: solid 2px var(--cor-destaque-hover);
+    }
+  }
+}

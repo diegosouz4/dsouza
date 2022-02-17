@@ -1,0 +1,56 @@
+.habilidades__card {
+  button {
+    color: var(--cor-suporte-escuro);
+    display: flex;
+    font-size: var(--tamanho-subtitulo);
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 0.5rem 1rem;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0.625rem;
+      transform: translateY(calc(-50% - 5px)) rotate(45deg);
+      width: 0.625rem;
+      height: 0.625rem;
+      border-radius: 0 0 4px;
+      border-bottom: 4px solid var(--cor-suporte-escuro);
+      border-right: 4px solid var(--cor-suporte-escuro);
+    }
+  }
+  svg {
+    margin-right: 1rem;
+    path {
+      fill: var(--cor-suporte-escuro);
+    }
+  }
+  dt {
+    padding: 0;
+  }
+  dd {
+    background-color: var(--cor-destaque);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    height: 0;
+    transition: var(--pop);
+    &.ativo {
+      padding: 1.5rem;
+      height: initial;
+      ul {
+        opacity: 1;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    transition: var(--pop);
+    opacity: 0;
+  }
+}

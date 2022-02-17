@@ -1,0 +1,31 @@
+.parceiros {
+  padding-top: var(--p-2-5);
+  padding-bottom: var(--p-2-5);
+  &__lista {
+    // @include flex(center, center, 5rem);
+    overflow-x: auto;
+    white-space: nowrap;
+    li {
+      display: inline-block;
+      & + li{
+        margin-left: var(--p-5);
+      }
+      &:hover,
+      &:focus {
+        img {
+          filter: grayscale(0);
+          opacity: 1;
+          transform: scale(1.1);
+        }
+      }
+    }
+    img {
+      width: 120px;
+      height: auto;
+      position: relative;
+      opacity: 0.75;
+      transition: var(--pop);
+      filter: grayscale(1);
+    }
+  }
+}

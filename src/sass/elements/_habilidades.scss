@@ -1,0 +1,9 @@
+.habilidades {
+  .row {
+    @include grid(flex-start, center);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    @include max-query(657px) {
+      gap: var(--p-2-5);
+    }
+  }
+}

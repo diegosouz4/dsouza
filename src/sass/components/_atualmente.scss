@@ -1,0 +1,18 @@
+.atualmente {
+  background-color: var(--cor-cinza);
+  h3 {
+    font-size: var(--tamanho-subtitulo);
+    margin-bottom: 0.625rem;
+  }
+  p {
+    font-size: var(--tamanho-tag);
+    line-break: 1.4;
+    max-width: initial;
+  }
+  li + li {
+    margin-top: var(--p-1);
+  }
+  .container {
+    max-width: 850px;
+  }
+}

@@ -9,6 +9,12 @@
   ul {
     margin-top: var(--p-1-5);
   }
+  ul,
+  a {
+    @include for-mobile-only {
+      margin-top: var(--p-2-5);
+    }
+  }
   &__imagem {
     margin: 0 auto;
     position: relative;

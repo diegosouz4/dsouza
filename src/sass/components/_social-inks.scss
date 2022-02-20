@@ -2,23 +2,98 @@
   svg {
     width: 1.5rem;
     height: 1.5rem;
-    transition: var(--pop);
-    path {
-      fill: var(--cor-suporte-escuro);
-    }
-    &:hover,
-    &:focus {
-      transform: scale(1.2);
-    }
   }
   &--inline {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
+    @include flex(center);
     @include for-mobile-only {
       justify-content: center;
       gap: 1.5625rem;
+    }
+    svg {
+      transition: var(--pop);
+      path {
+        fill: var(--cor-suporte-escuro);
+      }
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
+    }
+  }
+  &--border {
+    @include flex(center, center, 2rem);
+    @include for-mobile-only {
+      gap: 1.2rem;
+    }
+    a {
+      width: 2rem;
+      height: 2rem;
+      position: relative;
+      overflow: hidden;
+      display: block;
+      border-radius: 50%;
+      border: 1px solid var(--cor-cinza);
+      transition: var(--pop);
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+      }
+    }
+    svg {
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.6;
+      path {
+        fill: var(--cor-cinza);
+      }
+      &:hover,
+      &:focus {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  &--vertical {
+    display: none;
+    @include for-desktop-only {
+      display: inline-block;
+      position: fixed;
+      top: 150px;
+      right: 1.25rem;
+      z-index: 2;
+      li + li {
+        margin-top: 1rem;
+      }
+      a {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 0 -2rem rgba(37, 55, 81, 1);
+        &:hover,
+        &:focus {
+          transform: scale(1.1);
+          background-color: var(--cor-cinza);
+          box-shadow: 0 0 2rem -0.5rem rgba(37, 55, 81, 0.35);
+        }
+      }
+      svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        path {
+          fill: var(--cor-suporte-escuro);
+        }
+      }
     }
   }
 }

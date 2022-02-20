@@ -4,28 +4,6 @@
     @include flex(center, space-between);
     max-width: 1440px;
   }
-  &__logo {
-    transition: var(--pop);
-    svg {
-      position: relative;
-      z-index: 1;
-      transition: var(--pop);
-      path,
-      circle {
-        transition: var(--pop);
-      }
-    }
-    &:hover,
-    &:focus {
-      svg {
-        transform: scale(1.04) translateY(-5px);
-        path,
-        circle {
-          fill: var(--cor-destaque-hover);
-        }
-      }
-    }
-  }
   &__buttons {
     @include for-mobile-only {
       @include flex(center);
@@ -54,57 +32,28 @@
       flex: 2;
       position: initial;
     }
-
-    ul {
+    .nav__menu {
       @include for-tablete-extend {
         @include flex(center, flex-end, 2rem);
       }
-    }
-    @include for-mobile-only {
-      li + li {
-        margin-top: 1rem;
-      }
-    }
-    a {
-      display: block;
-      font-size: var(--tamanho-subtitulo);
-      color: var(--cor-suporte-escuro);
-      position: relative;
-      &::after {
-        content: "";
-        background-color: var(--cor-suporte-escuro);
-        border-radius: 4px;
-        bottom: -1rem;
-        display: block;
-        position: absolute;
-        opacity: 0;
-        width: 100%;
-        height: 2px;
-        transition: var(--pop);
-      }
-      &:hover,
-      &:focus {
-        &::after {
-          background-color: var(--cor-suporte-escuro);
-          bottom: -4px;
-          opacity: 1;
-        }
-      }
-      @include for-tablete-extend {
-        &.link_destaque {
-          background-color: var(--cor-destaque);
-          border-radius: 1.25rem;
-          color: var(--cor-destaque-escuro);
-          font-weight: bold;
-          height: 2.5rem;
-          line-height: 2.5rem;
-          padding: 0 1rem;
-          &:hover,
-          &:focus {
-            background-color: var(--cor-destaque-hover);
-          }
-          &::after {
-            content: none;
+      a {
+        color: var(--cor-suporte-escuro);
+        @include for-tablete-extend {
+          &.link_destaque {
+            background-color: var(--cor-destaque);
+            border-radius: 1.25rem;
+            color: var(--cor-destaque-escuro);
+            font-weight: bold;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            padding: 0 1rem;
+            &:hover,
+            &:focus {
+              background-color: var(--cor-destaque-hover);
+            }
+            &::after {
+              content: none;
+            }
           }
         }
       }
@@ -143,7 +92,6 @@
       }
     }
     &.open {
-      // background-color: var(--cor-suporte-escuro);
       &::before,
       &::after {
         transform: translate(-50%, -50%) rotate(-45deg);

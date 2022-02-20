@@ -2,15 +2,9 @@
   margin-top: var(--p-2);
   text-align: center;
   @include grid(center);
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--p-2) var(--p-1);
   @include min-query(1200px) {
     grid-template-columns: repeat(3, 1fr);
-  }
-  li {
-    @include for-desktop-only {
-      box-shadow: var(--box-shadow);
-    }
   }
   h3 {
     font-size: 1.25rem;
@@ -61,6 +55,7 @@
     li {
       @include for-desktop-only {
         position: relative;
+        box-shadow: var(--box-shadow);
         &:hover,
         &:focus {
           box-shadow: none;
@@ -121,7 +116,7 @@
         }
         h3,
         p {
-          transition: 2s ease-in;
+          transition: 450ms ease-in;
         }
         h3 {
           color: var(--cor-cinza);
@@ -141,6 +136,12 @@
           }
         }
       }
+    }
+  }
+  &--projetos{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    .thumbs__info{
+      margin-top: var(--p-1);
     }
   }
 }

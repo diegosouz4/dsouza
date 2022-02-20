@@ -1,0 +1,22 @@
+.logo {
+  transition: var(--pop);
+  svg {
+    position: relative;
+    z-index: 1;
+    transition: var(--pop);
+    path,
+    circle {
+      transition: var(--pop);
+    }
+  }
+  &:hover,
+  &:focus {
+    svg {
+      transform: scale(1.04) translateY(-5px);
+      path,
+      circle {
+        fill: var(--cor-destaque-hover);
+      }
+    }
+  }
+}

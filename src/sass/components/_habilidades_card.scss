@@ -2,7 +2,13 @@
   button {
     color: var(--cor-suporte-escuro);
     display: flex;
-    font-size: var(--tamanho-subtitulo);
+    font-size: var(--tamanho-tag);
+    @include min-query(360px) {
+      font-size: var(--tamanho-texto);
+    }
+    @include for-desktop-only {
+      font-size: var(--tamanho-subtitulo);
+    }
     font-weight: bold;
     letter-spacing: 1.2px;
     align-items: center;
@@ -24,7 +30,7 @@
     }
   }
   svg {
-    margin-right: 1rem;
+    margin-right: 0.625rem;
     path {
       fill: var(--cor-suporte-escuro);
     }

@@ -2,13 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  p,
+  h1,
   a {
     display: inline-block;
     margin: 0;
     padding: 0;
     line-height: 1;
     color: var(--cor-cinza-medio);
+    font-family: $font-regular;
+    font-size: var(--tamanho-texto);
+    font-weight: 300;
   }
   a {
     transition: 250ms ease-in;
@@ -34,12 +37,12 @@
       }
     }
   }
-  p {
+  h1 {
     color: var(--cor-suporte-escuro);
     font-weight: bold;
   }
   a + a,
-  a + p {
+  a + h1 {
     margin-left: 1rem;
     &::before {
       content: "/";

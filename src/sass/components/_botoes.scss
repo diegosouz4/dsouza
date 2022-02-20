@@ -63,8 +63,10 @@
     }
     &:hover,
     &:focus {
+      color: var(--cor-suporte-escuro);
       letter-spacing: 1.2px;
       &::after {
+        background-color: var(--cor-suporte-escuro);
         width: 0.5rem;
       }
     }

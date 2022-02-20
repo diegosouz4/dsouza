@@ -8,3 +8,11 @@ btnMenu.addEventListener("click", () => {
     btnMenu.blur();
   }, 600);
 });
+
+const menuLinks = document.querySelectorAll(".nav__menu a");
+
+menuLinks.forEach((link) => {
+  const UrlAtual = location.href;
+  const linkUrl = link.href;
+  if (UrlAtual.includes(linkUrl)) link.classList.add("ativo");
+});

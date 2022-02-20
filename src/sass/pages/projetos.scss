@@ -1,0 +1,10 @@
+.main__projetos {
+  .projetos {
+    .container {
+      & > p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

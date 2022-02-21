@@ -2,6 +2,9 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   overflow: hidden;
+  &.show {
+    overflow: visible;
+  }
   &--home {
     background-color: var(--cor-cinza);
   }

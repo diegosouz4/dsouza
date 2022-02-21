@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   h1,
+  p,
   a {
     display: inline-block;
     margin: 0;
@@ -10,7 +11,10 @@
     line-height: 1;
     color: var(--cor-cinza-medio);
     font-family: $font-regular;
-    font-size: var(--tamanho-texto);
+    font-size: var(--tamanho-tag);
+    @include min-query(360px) {
+      font-size: var(--tamanho-texto);
+    }
     font-weight: 300;
   }
   a {
@@ -37,12 +41,14 @@
       }
     }
   }
-  h1 {
+  h1,
+  p {
     color: var(--cor-suporte-escuro);
     font-weight: bold;
   }
   a + a,
-  a + h1 {
+  a + h1,
+  a + p {
     margin-left: 1rem;
     &::before {
       content: "/";

@@ -138,9 +138,12 @@
       }
     }
   }
-  &--projetos{
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    .thumbs__info{
+  &--projetos {
+    grid-template-columns: 1fr;
+    @include min-query(520px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .thumbs__info {
       margin-top: var(--p-1);
     }
   }

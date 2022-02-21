@@ -5,16 +5,15 @@ const mincss = require("gulp-clean-css");
 const terser = require("gulp-terser");
 const webp = require("gulp-webp");
 
-/*
+
 // minImg and webpconverter
 
-import gulp from "gulp";
-import imagemin from "imagemin";
-gulp.task("minifyImg", () => {
-  gulp.src("src/img/*.{jpg,png}").pipe(imagemin()).pipe(gulp.dest("dir/img"));
-});
+// import gulp from "gulp";
+// import imagemin from "imagemin";
+// gulp.task("minifyImg", () => {
+//   gulp.src("src/img/*.{jpg,png}").pipe(imagemin()).pipe(gulp.dest("dir/img"));
+// });
 
-*/
 
 // Css functions
 function minifyCss() {

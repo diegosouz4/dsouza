@@ -1,0 +1,48 @@
+.main__projeto {
+  .projeto {
+    &__intro {
+      .container {
+        max-width: 850px;
+      }
+      .btn {
+        margin-top: 0.625rem;
+      }
+    }
+    &__tags {
+      li {
+        display: inline-block;
+        color: var(--cor-cinza-escuro);
+        font-size: var(--tamanho-tag);
+        & + li {
+          margin-left: 0.625rem;
+          position: relative;
+          &::before {
+            content: "";
+            display: block;
+            width: 4px;
+            height: 4px;
+            background-color: var(--cor-cinza-medio);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: -9px;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+
+    &__titulo {
+      font-size: 2rem;
+      font-family: $font-destaque;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 0.625rem;
+    }
+
+    &__descricao {
+      margin-top: var(--p-2);
+      font-size: var(--tamanho-texto);
+    }
+  }
+}

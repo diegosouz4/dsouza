@@ -122,8 +122,10 @@
     }
   }
   &__copy {
-    font-size: var(--tamanho-texto);
-    color: var(--cor-cinza-escuro);
+    font-size: var(--tamanho-tag);
+    font-weight: 300;
+    color: var(--cor-cinza-claro);
+    opacity: 0.7;
     max-width: initial;
     letter-spacing: 1.2px;
   }

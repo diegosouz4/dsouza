@@ -1,0 +1,191 @@
+@mixin input-style {
+  color: var(--cor-suporte-escuro);
+  border: 0;
+  border-radius: 0.25rem;
+  border: 1px solid var(--cor-cinza-claro);
+  box-shadow: var(--box-shadow);
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  position: relative;
+  transition: var(--pop);
+  &:focus {
+    outline: 1px solid var(--cor-destaque);
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.main__contato {
+  .contato {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 60%;
+      max-width: 800px;
+      height: 1020px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border-radius: 0 2rem 2rem 0;
+      background-color: var(--cor-destaque);
+      @include min-query(500px) {
+        height: 820px;
+      }
+      @include min-query(768px) {
+        height: 680px;
+      }
+    }
+  }
+  .container {
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+    padding: 3.75rem 1.25rem;
+    position: relative;
+    @include for-tablete-extend {
+      padding: 3.75rem var(--p-2-5);
+    }
+  }
+  .row {
+    @include flex(center, center, var(--p-2));
+    div {
+      width: calc(100% - 1.25rem);
+      @include for-tablete-extend {
+        width: calc(60% - var(--p-2-5));
+        &:first-child {
+          width: calc(40% - var(--p-2-5));
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-size: var(--tamanho-subtitulo);
+    text-transform: uppercase;
+  }
+  h3,
+  p {
+    margin-bottom: 0.625rem;
+  }
+  p {
+    max-width: 60ch;
+  }
+  ul {
+    li + li {
+      margin-top: 0.3125rem;
+    }
+    li,
+    a {
+      font-size: var(--tamanho-tag);
+      color: var(--cor-cinza-medio);
+    }
+    svg {
+      margin-right: 0.625rem;
+      vertical-align: center;
+    }
+    a {
+      transition: var(--pop);
+      &:hover,
+      &:focus {
+        color: var(--cor-suporte);
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+
+  .form {
+    @include flex(center, space-between, 0.625rem);
+    fieldset {
+      width: 100%;
+      & + fieldset {
+        margin-top: 0.625rem;
+      }
+      @include min-query(500px) {
+        width: calc(50% - 0.625rem);
+        &:nth-child(n + 3) {
+          margin-top: 0.625rem;
+        }
+        & + fieldset {
+          margin-top: 0;
+        }
+        &.wide {
+          width: 100%;
+        }
+      }
+    }
+    label {
+      display: block;
+      font-size: var(--tamanho-tag);
+      font-weight: 600;
+      color: var(--cor-suporte-escuro);
+      margin-bottom: 0.3125rem;
+    }
+    input,
+    select {
+      width: 100%;
+      height: 2.5rem;
+      @include input-style;
+    }
+    input {
+      &::placeholder {
+        color: var(--cor-cinza-medio);
+      }
+    }
+    option {
+      background-color: var(--cor-cinza);
+    }
+    textarea {
+      width: 100%;
+      max-width: 100%;
+      height: 150px;
+      max-height: 200px;
+      resize: none;
+      @include input-style;
+      padding: 0.625rem;
+      &::-webkit-scrollbar {
+        width: 0.5rem;
+        height: 100%;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: var(--cor-cinza);
+        border-radius: 2px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--cor-cinza-claro);
+        border: 1px solid var(--cor-cinza);
+      }
+    }
+
+    .btn--border {
+      width: 120px;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      font-size: var(--tamanho-tag);
+      color: var(--cor-destaque-escuro);
+      background-color: var(--cor-destaque);
+      border-color: var(--cor-destaque);
+      svg {
+        margin-left: 0.3125rem;
+        vertical-align: middle;
+        width: 1.5rem;
+        height: auto;
+        path,
+        circle {
+          fill: var(--cor-destaque-escuro);
+        }
+      }
+      &:hover,
+      &:focus {
+        background-color: var(--cor-destaque-hover);
+      }
+    }
+  }
+}
+
+.contato__footer {
+  padding: var(--p-2) 0 var(--p-2-5);
+  box-shadow: none;
+}

@@ -44,5 +44,11 @@
       margin-top: var(--p-2);
       font-size: var(--tamanho-texto);
     }
+
+    &__imagens{
+      .container{
+        max-width: 1440px;
+      }
+    }
   }
 }

@@ -6,6 +6,7 @@
   display: inline-block;
   width: max-content;
   padding: 0.5rem 1rem;
+
   &.card--cursos {
     display: flex;
     align-items: center;
@@ -26,8 +27,12 @@
       height: 40px;
       line-height: 40px;
       text-align: center;
-      transform: translateX(60%);
+      transform: translateX(45%);
       width: 50px;
+      flex-shrink: 0;
+      @include min-query(450px) {
+        transform: translateX(60%);
+      }
     }
     &::before {
       content: "";

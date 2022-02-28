@@ -98,3 +98,38 @@
     box-shadow: var(--neuInnerShadow);
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .btn {
+    &--border {
+      border-color: var(--cor-cinza-medio);
+      color: var(--cor-cinza-medio);
+      &:hover,
+      &:focus {
+        background: var(--cor-destaque);
+        border-color: var(--cor-destaque-escuro);
+        color: var(--cor-suporte-escuro);
+      }
+    }
+
+    &--inline {
+      &:hover,
+      &:focus {
+        color: var(--cor-dark-suporte);
+        &::after {
+          background-color: var(--cor-dark-suporte);
+        }
+      }
+    }
+  }
+
+  .mobile__btn {
+    background: var(--cor-dark-card);
+    border-color: var(--cor-dark-suporte);
+    box-shadow: var(--neuShadow-dark);
+    &:focus {
+      box-shadow: var(--neuInnerShadow-dark);
+    }
+  }
+}

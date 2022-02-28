@@ -148,3 +148,25 @@
     }
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .thumbs {
+    &--home {
+      li {
+        @include for-desktop-only {
+          &:hover,
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+      .thumbs__info {
+        @include for-desktop-only {
+          background: var(--cor-dark-card);
+          border: 1px solid var(--cor-dark-suporte);
+        }
+      }
+    }
+  }
+}

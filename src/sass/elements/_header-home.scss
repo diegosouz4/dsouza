@@ -55,3 +55,12 @@
     }
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .header {
+    &--home {
+      background-color: var(--cor-dark-suporte-medio);
+    }
+  }
+}

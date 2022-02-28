@@ -130,3 +130,26 @@
     letter-spacing: 1.2px;
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .footer {
+    background: none;
+    box-shadow: none;
+    &__barracontato {
+      background: var(--cor-dark-card);
+      border: 1px solid var(--cor-dark-suporte);
+      box-shadow: var(--neuShadow-dark);
+    }
+
+    &__menu {
+      .nav__menu {
+        a {
+          &::after {
+            background-color: var(--cor-dark-suporte);
+          }
+        }
+      }
+    }
+  }
+}

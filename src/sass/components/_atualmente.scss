@@ -16,3 +16,16 @@
     max-width: 850px;
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"]{
+  .atualmente{
+    background-color: var(--cor-dark-suporte-medio);
+    hr{
+      background-color: var(--cor-dark-suporte-escuro-2);
+    }
+    h3{
+      color: var(--cor-dark-suporte-claro);
+    }
+  }
+}

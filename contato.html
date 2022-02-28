@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="dir/css/style.css" />
 </head>
-<body>
+<body data-darkmode="false">
   <header class="header header--home">
     <div class="container container__menu">
       <a class="header__logo logo" href="/" title="logo Diego Souza" aria-label="Voltar para home">
@@ -74,12 +74,12 @@
             <form class="form" action="./enviar.php" method="post">
               <fieldset>
                 <label for="nome">Nome</label>
-                <input id="nome" name="nome" type="text">
+                <input id="nome" name="nome" type="text" required>
               </fieldset>
 
               <fieldset>
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="exemplo@exemplo.com">
+                <input id="email" name="email" type="email" placeholder="exemplo@exemplo.com" required>
               </fieldset>
 
               <fieldset>
@@ -99,7 +99,7 @@
 
               <fieldset class="wide">
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem"></textarea>
+                <textarea name="mensagem" id="mensagem" required></textarea>
               </fieldset>
 
               <button class="btn btn--border">Enviar <svg width="32" height="32" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 32 32" xml:space="preserve"><path fill="#111" d="m29 11.2-12.4-8c-1.6-.8-3.6-.7-5.1.3-1.1.7-1.8 1.7-2.2 2.8l2 .1c.3-.6.7-1 1.3-1.4.6-.3 1.2-.5 1.8-.5.5 0 1 .1 1.5.3l12.4 8c1.2.6 1.9 1.7 1.9 3.1 0 1.3-.7 2.5-1.9 3.1l-12.4 8c-1.1.5-2.3.4-3.3-.2-.6-.4-1-.9-1.3-1.5h-2c.3 1.3 1.2 2.3 2.3 3.1.9.5 1.8.8 2.8.8.8 0 1.6-.2 2.3-.5l12.4-8c1.8-.9 3-2.7 3-4.8-.1-2-1.2-3.8-3.1-4.7z"/><path fill="#111" d="M19.5 21.4c.6-.6 1.2-1.4 1.6-2.2.3-.7.5-1.4.7-2.2.1-.4.1-.7.1-1.1 0-.4 0-.7-.1-1.1-.1-.8-.3-1.5-.7-2.2-.4-.8-.9-1.5-1.6-2.2-1.4-1.3-3.3-2.2-5.3-2.2h-13C.5 8.4 0 8.9 0 9.5c0 .6.5 1.1 1.1 1.1h6.5c.3 0 .6.2.8.4.2.2.3.4.3.7 0 .6-.5 1.1-1.1 1.1H5.4c-.6 0-1.1.5-1.1 1.1 0 .6.5 1.1 1.1 1.1h2.2c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1H1.1c-.6 0-1.1.5-1.1 1.1s.5 1.1 1.1 1.1h6.5c.6 0 1.1.5 1.1 1.1 0 .3-.1.5-.3.7-.2.2-.5.4-.8.4H5.4c-.6 0-1.1.5-1.1 1.1s.5 1.1 1.1 1.1h8.7c2.1-.2 4-1 5.4-2.4zm-7.7-6.2c-.4-.4-.4-1.1 0-1.5l1.5-1.5c.4-.4 1.1-.4 1.5 0 .4.4.4 1.1 0 1.5l-1.5 1.5c-.4.5-1 .5-1.5 0zm1.6 4.6c-.4-.4-.4-1.1 0-1.5l1.5-1.5c.4-.4 1.1-.4 1.5 0 .4.4.4 1.1 0 1.5l-1.5 1.5c-.4.5-1.1.5-1.5 0z"/><circle fill="#111" cx="1.1" cy="13.8" r="1.1"/></svg></button>

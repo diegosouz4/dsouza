@@ -60,3 +60,29 @@
     opacity: 0;
   }
 }
+
+
+//darkmode ativo
+body[data-darkmode="true"]{
+  .habilidades__card{
+    button {
+      color: var(--cor-cinza);
+      &::after {
+        border-bottom-color: var(--cor-dark-suporte);
+        border-right-color: var(--cor-dark-suporte);
+      }
+    }
+    svg {
+      path {
+        fill: var(--cor-dark-suporte);
+      }
+    }
+    dd {
+      background-color: var(--cor-dark-suporte-escuro-2);
+      border: 1px solid var(--cor-dark-suporte);
+    }
+    li{
+      color: var(--cor-cinza);
+    }
+  }
+}

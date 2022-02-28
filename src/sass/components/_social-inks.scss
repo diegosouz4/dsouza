@@ -97,3 +97,40 @@
     }
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .social {
+    &--inline {
+      svg {
+        path {
+          fill: var(--cor-dark-suporte);
+        }
+      }
+    }
+
+    &--vertical {
+      display: none;
+      @include for-desktop-only {
+        display: inline-block;
+        a {
+          &:hover,
+          &:focus {
+            background-color: var(--cor-dark-suporte);
+            box-shadow: var(--neuShadow-dark);
+            svg{
+              path{
+                fill: var(--cor-dark-suporte-escuro);
+              }
+            }
+          }
+        }
+        svg {
+          path {
+            fill: var(--cor-dark-suporte);
+          }
+        }
+      }
+    }
+  }
+}

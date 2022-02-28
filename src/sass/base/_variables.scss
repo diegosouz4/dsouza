@@ -14,9 +14,22 @@ $font-regular: "Poppins", sans-serif;
   --cor-cinza-escuro: #666;
 
   //Neumorphic cores
-  --neuShadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
-  --neuInnerShadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
-    inset 0.2rem 0.2rem 0.5rem #fff;
+  --neuClaro:#fff;
+  --neuClaro-dark:#2c3c50;
+  --neuEscuro:#c8d0e7;
+  --neuEscuro-dark:#031016;
+  --neuShadow: 0.3rem 0.3rem 0.6rem var(--neuEscuro), -0.2rem -0.2rem 0.5rem var(--neuClaro);
+  --neuShadow-dark: 0.3rem 0.3rem 0.6rem var(--neuEscuro-dark), -0.2rem -0.2rem 0.5rem var(--neuClaro-dark);
+  --neuInnerShadow: inset 0.2rem 0.2rem 0.5rem var(--neuEscuro), inset 0.2rem 0.2rem 0.5rem var(--neuClaro);
+  --neuInnerShadow-dark: inset 0.2rem 0.2rem 0.5rem var(--neuEscuro-dark), inset 0.2rem 0.2rem 0.5rem var(--neuClaro-dark);
+
+  //Darkmode cores
+  --cor-dark-suporte: #3a5d8e;
+  --cor-dark-suporte-claro: #4687e3;
+  --cor-dark-suporte-medio: #181f28;
+  --cor-dark-suporte-escuro: #151a21;
+  --cor-dark-suporte-escuro-2: #0c0f14;
+  --cor-dark-card: linear-gradient(180deg, #28374d, #1d2735);
 
   // Tamanho fonte
   --tamanho-titulo: 1.25rem; //20px

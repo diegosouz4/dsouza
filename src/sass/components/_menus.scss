@@ -39,3 +39,14 @@
     }
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .nav__menu {
+    a {
+      &:not(.ativo):after {
+        background-color: var(--cor-cinza);
+      }
+    }
+  }
+}

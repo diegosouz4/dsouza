@@ -59,3 +59,34 @@
     }
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .bradcrumbs {
+    h1,
+    p,
+    a {
+      color: var(--cor-dark-suporte);
+    }
+    a {
+      &::after {
+        background-color: var(--cor-dark-suporte-claro);
+      }
+      &:hover,
+      &:focus {
+        color: var(--cor-dark-suporte-claro);
+      }
+    }
+    h1,
+    p {
+      color: var(--cor-cinza);
+    }
+    a + a,
+    a + h1,
+    a + p {
+      &::before {
+        color: var(--cor-dark-suporte);
+      }
+    }
+  }
+}

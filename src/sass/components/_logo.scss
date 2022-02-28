@@ -20,3 +20,24 @@
     }
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .logo {
+    svg {
+      path,
+      circle {
+        fill: var(--cor-dark-suporte);
+      }
+    }
+    &:hover,
+    &:focus {
+      svg {
+        path,
+        circle {
+          fill: var(--cor-destaque-hover);
+        }
+      }
+    }
+  }
+}

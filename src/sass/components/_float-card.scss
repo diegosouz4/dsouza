@@ -57,3 +57,28 @@
     }
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .float-card {
+    background: var(--cor-dark-card);
+    border-color: var(--cor-dark-suporte);
+    box-shadow: var(--neuShadow-dark);
+
+    &.card--cursos {
+      span {
+        background: var(--cor-dark-suporte);
+        color: var(--cor-cinza-claro);
+      }
+    }
+
+    &.card--faq {
+      outline: solid 2px transparent;
+      &:hover,
+      &:focus,
+      &.ativo {
+        outline: solid 2px var(--cor-dark-suporte);
+      }
+    }
+  }
+}

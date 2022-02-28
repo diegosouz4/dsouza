@@ -45,9 +45,27 @@
       font-size: var(--tamanho-texto);
     }
 
-    &__imagens{
-      .container{
+    &__imagens {
+      .container {
         max-width: 1440px;
+      }
+    }
+  }
+}
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .main__projeto {
+    .projeto {
+      &__tags {
+        li {
+          color: var(--cor-dark-suporte-claro);
+          & + li {
+            &::before {
+              background-color: var(--cor-dark-suporte);
+            }
+          }
+        }
       }
     }
   }

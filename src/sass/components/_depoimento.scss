@@ -124,3 +124,29 @@
     }
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"]{
+  .depoimentos{
+    h4 {
+      color: var(--cor-dark-suporte-claro);
+    }
+    &__dots {
+      span {
+        background-color: var(--cor-dark-suporte-medio);
+        border: 1px solid var(--cor-dark-suporte);
+        &.ativo {
+          background-color: var(--cor-dark-suporte-claro);
+          &:hover,
+          &:focus {
+            background-color: var(--cor-dark-suporte);
+          }
+        }
+        &:hover,
+        &:focus {
+          background-color: var(--cor-dark-suporte);
+        }
+      }
+    }
+  }
+}

@@ -35,7 +35,7 @@ p + p {
   margin-top: 1rem;
 }
 
-section p + a{
+section p + a {
   margin-top: var(--p-1-5);
 }
 
@@ -95,5 +95,24 @@ button {
   @include for-desktop-only {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+}
+
+body[data-darkmode="true"] {
+  background-color: var(--cor-dark-suporte-escuro);
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--cor-cinza);
+  }
+  p {
+    color: var(--cor-cinza-claro);
+    & > strong {
+      color: var(--cor-dark-suporte);
+    }
+  }
+  hr {
+    background-color: var(--cor-dark-suporte-medio);
   }
 }

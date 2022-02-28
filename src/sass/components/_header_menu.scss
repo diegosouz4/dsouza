@@ -106,3 +106,52 @@
     }
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .header {
+    nav {
+      @include for-mobile-only {
+        background: var(--cor-dark-card);
+        border-color: var(--cor-dark-suporte);
+      }
+    }
+
+    .nav__menu {
+      a {
+        color: var(--cor-cinza);
+        @include for-tablete-extend {
+          &.link_destaque {
+            color: var(--cor-destaque-escuro);
+          }
+        }
+      }
+    }
+
+    .btn__menu {
+      &::before,
+      &::after {
+        background-color: var(--cor-dark-suporte);
+      }
+      &::before {
+        border-top-color: var(--cor-dark-suporte);
+        border-bottom-color: var(--cor-dark-suporte);
+        background-color: transparent;
+      }
+      &.open {
+        &::before,
+        &::after {
+          background-color: var(--cor-dark-suporte);
+        }
+      }
+    }
+    .btn__darkmode {
+      svg {
+        path,
+        circle {
+          fill: var(--cor-dark-suporte);
+        }
+      }
+    }
+  }
+}

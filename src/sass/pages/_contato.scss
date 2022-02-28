@@ -189,3 +189,63 @@
   padding: var(--p-2) 0 var(--p-2-5);
   box-shadow: none;
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .main__contato {
+    p {
+      color: var(cor-cinza-claro);
+    }
+    li {
+      opacity: 0.6;
+      transition: var(--pop);
+      &:hover,
+      &:focus {
+        opacity: 1;
+        a{
+          color: var(--cor-dark-suporte-claro);
+        }
+      }
+    }
+    li,
+    a {
+      color: var(--cor-cinza);
+    }
+    svg {
+      path,
+      circle {
+        fill: var(--cor-cinza);
+      }
+    }
+
+    .form {
+      label {
+        color: var(--cor-cinza-claro);
+      }
+      input,
+      select,
+      textarea {
+        background-color: var(--cor-dark-suporte-escuro);
+        border-color: var(--cor-dark-suporte);
+        color: var(--cor-cinza);
+      }
+      input {
+        &::placeholder {
+          color: var(--cor-cinza-medio);
+        }
+      }
+      option {
+        background-color: var(--cor-dark-suporte-escuro);
+      }
+      textarea {
+        &::-webkit-scrollbar-track {
+          background-color: var(--cor-dark-suporte-escuro-2);
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: var(--cor-dark-suporte);
+          border-color: var(--cor-dark-suporte-escuro-2);
+        }
+      }
+    }
+  }
+}

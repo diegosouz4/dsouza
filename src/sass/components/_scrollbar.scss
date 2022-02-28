@@ -12,3 +12,14 @@ body {
     border: 1px solid var(--cor-cinza-claro);
   }
 }
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  &::-webkit-scrollbar-track {
+    background-color: var(--cor-dark-suporte-escuro-2);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--cor-destaque-hover);
+    border: 1px solid var(--cor-dark-suporte-escuro-2);
+  }
+}

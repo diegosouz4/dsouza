@@ -8,7 +8,10 @@
     li {
       display: inline-block;
       & + li {
-        margin-left: var(--p-5);
+        margin-left: var(--p-2-5);
+        @include min-query(500px) {
+          margin-left: var(--p-5);
+        }
       }
       &:hover,
       &:focus {
@@ -22,12 +25,15 @@
     }
     img,
     svg {
-      width: 120px;
+      width: 150px;
       height: auto;
       position: relative;
       opacity: 0.75;
       transition: var(--pop);
       filter: grayscale(1);
+      @include min-query(500px) {
+        width: 120px;
+      }
     }
   }
 }

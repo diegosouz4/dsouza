@@ -105,6 +105,28 @@
       }
     }
   }
+
+  .btn__darkmode {
+    &.ativo {
+      svg {
+        #star {
+          transform: rotate(0.5turn);
+        }
+        #dot {
+          transform: translateX(-18%);
+        }
+      }
+    }
+    svg {
+      #star {
+        transform-origin: center;
+        transition: 750ms cubic-bezier(0.04, 0.2, 0.51, 1.4);
+      }
+      #dot {
+        transition: 500ms ease-out;
+      }
+    }
+  }
 }
 
 //darkmode ativo

@@ -7,25 +7,38 @@
     white-space: nowrap;
     li {
       display: inline-block;
-      & + li{
+      & + li {
         margin-left: var(--p-5);
       }
       &:hover,
       &:focus {
-        img {
+        img,
+        svg {
           filter: grayscale(0);
           opacity: 1;
           transform: scale(1.1);
         }
       }
     }
-    img {
+    img,
+    svg {
       width: 120px;
       height: auto;
       position: relative;
       opacity: 0.75;
       transition: var(--pop);
       filter: grayscale(1);
+    }
+  }
+}
+
+//darkmode ativo
+body[data-darkmode="true"] {
+  .parceiros {
+    svg {
+      .base {
+        fill: #fff;
+      }
     }
   }
 }

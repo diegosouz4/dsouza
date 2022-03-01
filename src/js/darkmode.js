@@ -29,10 +29,12 @@
     if (valorStorage == "light") {
       body.setAttribute("data-darkmode", "false");
       labelBtn.setAttribute("aria-label", "Mudar para darkmode");
+      labelBtn.classList.remove("ativo");
       return;
     }
     body.setAttribute("data-darkmode", "true");
     labelBtn.setAttribute("aria-label", "Desativar darkmode");
+    labelBtn.classList.add("ativo");
   });
 
   const alternaDarkMode = () => {
@@ -43,11 +45,14 @@
       body.setAttribute("data-darkmode", "false");
       salvaLocalStorage("light");
       labelBtn.setAttribute("aria-label", "Mudar para darkmode");
+      labelBtn.classList.remove("ativo");
       return;
     }
     body.setAttribute("data-darkmode", "true");
     salvaLocalStorage("dark");
     labelBtn.setAttribute("aria-label", "Desativar darkmode");
+    labelBtn.classList.add("ativo");
+    trocaImg();
   };
 
   const btnDarkmode = document.getElementById("btnDarkMode");

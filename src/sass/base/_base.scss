@@ -78,6 +78,9 @@ section {
     padding-top: var(--p-5);
     padding-bottom: var(--p-5);
   }
+  .container{
+    overflow: hidden;
+  }
 }
 
 button {

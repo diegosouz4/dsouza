@@ -1,0 +1,38 @@
+.main__estudo {
+  .estudo {
+    &__intro {
+      .container {
+        max-width: 750px;
+      }
+    }
+
+    &__repositorio {
+      background-color: var(--cor-cinza);
+      .repositorio__erro {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .repositorio__lista {
+        @include flex(initial, center);
+        h3 {
+          text-transform: uppercase;
+          margin-bottom: 0.3125rem;
+        }
+        p {
+          font-size: var(--tamanho-tag);
+        }
+      }
+    }
+  }
+}
+//darkmode ativo
+body[data-darkmode="true"] {
+  .main__estudo {
+    .estudo {
+      &__repositorio {
+        background-color: var(--cor-dark-suporte-escuro-2);
+      }
+    }
+  }
+}

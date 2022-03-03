@@ -3,6 +3,8 @@
   .container__menu {
     @include flex(center, space-between);
     max-width: 1440px;
+    position: relative;
+    z-index: 4;
   }
   &__buttons {
     @include for-mobile-only {

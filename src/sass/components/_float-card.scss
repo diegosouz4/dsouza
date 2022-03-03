@@ -7,6 +7,26 @@
   width: max-content;
   padding: 0.5rem 1rem;
 
+  &.card--repositorio {
+    position: relative;
+    width: 100%;
+    @include for-desktop-only {
+      max-width: 350px;
+    }
+    &::before {
+      content: "";
+      background-color: var(--cor-destaque-hover);
+      border-radius: 1rem;
+      display: block;
+      left: -3px;
+      height: 2.5rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.375rem;
+    }
+  }
+
   &.card--cursos {
     display: flex;
     align-items: center;

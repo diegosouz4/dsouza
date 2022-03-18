@@ -1,5 +1,5 @@
 // minImg and webpconverter
-// Para usar essas funções é preciso adicionar a tag ("type" : "module") no arquivo "package.json" e comentar todos as outras funções gulp.
+// Para usar essas funções é preciso adicionar a tag ("type" : "module",) no arquivo "package.json" e comentar todos as outras funções gulp.
 // import gulp from "gulp";
 // import imagemin from "gulp-imagemin";
 // import webp from "gulp-webp";

@@ -8,11 +8,6 @@
 
     &__repositorio {
       background-color: var(--cor-cinza);
-      .repositorio__erro {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-      }
       .repositorio__lista {
         @include flex(initial, center);
         h3 {

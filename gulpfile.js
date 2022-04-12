@@ -30,13 +30,13 @@ function minifyCss() {
 
 //Js functions
 function minifyJs() {
-  return gulp.src("src/js/*.js").pipe(terser()).pipe(gulp.dest("dir/js"));
+  return gulp.src("src/js/**/*.js").pipe(terser()).pipe(gulp.dest("dir/js"));
 }
 
 // Watch task
 function watch() {
   gulp.watch("src/sass/**/*.scss", minifyCss);
-  gulp.watch("src/js/*.js", minifyJs);
+  gulp.watch("src/js/**/*.js", minifyJs);
 }
 
 // Tasks

@@ -1,0 +1,1 @@
+export function getLocalStorage(t,e=!0){const o=localStorage.getItem(t);return e?o:JSON.parse(o)}export function setLocalStorage(t,e){if("string"==typeof e)return void localStorage.setItem(t,e);const o=JSON.stringify(e);localStorage.setItem(t,o)}

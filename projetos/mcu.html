@@ -5,6 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Nessa página mostro como foi o processo utilizado para o desenvolvimento do novo site do Ministério Cristo em Unidade.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diego Souza | desenvolvedor front-end"/>
+  <meta property="og:description" content="Olá, me chamo Diego Souza. Um desenvolvedor front-end carioca e apaixonado por tecnologia."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://dsouza.com.br/"/>
+  <meta property="og:image" content="https://dsouza.com.br/n2/dir/img/og-diego-souza.jpg"/>
+  <meta property="og:image:secure_url" content="https://dsouza.com.br/n2/dir/img/og-diego-souza.jpg"/>
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:site_name" content="Diego Souza"/>
+
   <title>MCU - Ministério Cristo em Unidade | Diego Souza desenvolvedor front-end</title>
 
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -14,6 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../dir/css/style.css" />
+  <script>document.documentElement.className = "js";</script>
 </head>
 <body data-darkmode="false">
   <header class="header header--home">
@@ -72,6 +84,7 @@
       <div class="container">
         <ul class="projeto__lista">
         </ul>
+        <p class="projeto__erro erro--fetch" data-anime="bottom">Essa funcionalidade necessita de javascript funcionar corretamente.</p>
       </div>
     </section>
   </main>
@@ -108,9 +121,7 @@
       <p class="footer__copy">Feito por mim  © <span id="ano">2022</span>.</p>
     </div>
   </footer>
-  <script src="../dir/js/menu.js"></script>
-  <script src="../dir/js/darkmode.js"></script>
-  <script async src="../dir/js/mostra-projeto.js"></script>
-  <script async src="../dir/js/animeScroll.js"></script>
+  <script type="module" src="../dir/js/scripts-default.js"></script>
+  <script type="module" src="../dir/js/scripts-page-projeto.js"></script>
 </body>
 </html>

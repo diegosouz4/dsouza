@@ -1,7 +1,7 @@
 .thumbs {
   margin-top: var(--p-2);
   text-align: center;
-  @include grid(center);
+  @include grid(start);
   gap: var(--p-2) var(--p-1);
   @include min-query(1200px) {
     grid-template-columns: repeat(3, 1fr);

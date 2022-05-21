@@ -1,1 +1,1 @@
-import{initAnimaScroll}from"./modules/animeScroll.js";function initPages(){initAnimaScroll()}initPages();
+import{initAnimeDefault}from"./modules/animeScroll.js";function initPages(){initAnimeDefault()}initPages();

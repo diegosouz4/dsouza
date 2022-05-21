@@ -65,13 +65,14 @@
   h3 {
     font-size: var(--tamanho-subtitulo);
     text-transform: uppercase;
-  }
-  h3,
-  p {
     margin-bottom: 0.625rem;
   }
   p {
     max-width: 60ch;
+    & + P {
+      margin-top: 0.3125rem;
+      margin-bottom: 1rem;
+    }
   }
   ul {
     li + li {
@@ -202,7 +203,7 @@ body[data-darkmode="true"] {
       &:hover,
       &:focus {
         opacity: 1;
-        a{
+        a {
           color: var(--cor-dark-suporte-claro);
         }
       }
